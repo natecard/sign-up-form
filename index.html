@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="background-container" id="background-container">
+       <img src="background.jpg" id="background-image" alt="hallway">
+        <a class="text" id="photo-credit" href="https://unsplash.com/photos/P-KqZsCJ18M">Photo by Adrien Olichon on Unsplash</a>
+        <div class="middle-left" id="logo">
+          <img src="weekend-outlined-24px.jpg" alt="Couch">
+        </div>
+    </div>
+    <div class="right-container" id="wrapper-container">
+          <p class="text">This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams. 
+            Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</p>
+      <div class="wrapper" id="middle">
+        <p>Let's do this!</p>
+        <form class="form" action="push" id="sign-up">
+          <div class="inputs">  
+            <label for="first-name">First Name</label>
+          </div>
+            <input type="text" id="first-name" placeholder="John"/>
+          <div class="inputs">  
+            <label for="last-name">Last Name</label>
+          </div>
+            <input type="text" id="last-name" placeholder="Smith"/>
+          <div class="inputs">
+            <label for="email">Email Address</label>
+          </div>
+            <input type="email" id="email" placeholder="email@email.com"/>
+          <div class="inputs">
+            <label for="telephone-number">Phone Number</label>
+          </div>
+            <input type="tel" id="telephone-number" placeholder="999-999-9999"/>
+          <div class="inputs">
+            <label for="pwd">Password</label>
+          </div>
+            <input type="password" id="pwd"/>
+          <div class="inputs">
+            <label for="pwd-confirm">Confirm Password</label>
+          </div>
+            <input type="password" id="pwd-confirm"/>
+      </div>
+          <button class="button" type="submit">Create Account</button>
+          <p class="text-bottom">Already have an account? <a href="">Log in</a></p>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
