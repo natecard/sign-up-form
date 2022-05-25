@@ -12,8 +12,9 @@
     <div class="background-container" id="background-container">
        <img src="background.jpg" id="background-image" alt="hallway">
         <a class="text" id="photo-credit" href="https://unsplash.com/photos/P-KqZsCJ18M">Photo by Adrien Olichon on Unsplash</a>
-        <div class="middle-left" id="logo">
-          <img src="weekend-outlined-24px.jpg" alt="Couch">
+        <div class="middle-left">
+          <img id="logo" src="odin-lined.png" alt="logo">
+          <h1 id="logo-title">Sign-Up Form</h1>
         </div>
     </div>
     <div class="right-container" id="wrapper-container">
@@ -22,35 +23,35 @@
             Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</p>
       <div class="wrapper" id="middle">
         <p>Let's do this!</p>
-        <form class="form" action="push" id="sign-up">
-          <div class="inputs">  
-            <label for="first-name">First Name</label>
-          </div>
-            <input type="text" id="first-name" placeholder="John"/>
-          <div class="inputs">  
-            <label for="last-name">Last Name</label>
-          </div>
-            <input type="text" id="last-name" placeholder="Smith"/>
-          <div class="inputs">
-            <label for="email">Email Address</label>
-          </div>
-            <input type="email" id="email" placeholder="email@email.com"/>
-          <div class="inputs">
-            <label for="telephone-number">Phone Number</label>
-          </div>
-            <input type="tel" id="telephone-number" placeholder="999-999-9999"/>
-          <div class="inputs">
-            <label for="pwd">Password</label>
-          </div>
-            <input type="password" id="pwd"/>
-          <div class="inputs">
-            <label for="pwd-confirm">Confirm Password</label>
-          </div>
-            <input type="password" id="pwd-confirm"/>
+        <form class="form" action="post" id="sign-up">
+          <label for="first-name">First Name
+              <input type="text" id="first-name" placeholder="John"/>
+              <div id="first-name-error" class="error"></div>
+          </label>
+          <label for="last-name">Last Name
+              <input type="text" id="last-name" placeholder="Smith"/>
+              <div></div>
+          </label>
+          <label for="email">Email Address
+              <input type="email" id="email" placeholder="email@email.com"/>
+              <div></div>
+          </label>
+          <label for="telephone-number">Phone Number
+              <input type="tel" id="telephone-number" placeholder="999-999-9999"/>
+              <div></div>
+          </label>
+          <label for="pwd">Password*
+              <input type="password" class="password" id="pwd" placeholder="8 characters A-Z 1-9" required/>
+              <div></div>
+          </label>
+          <label for="pwd-confirm">Confirm Password*
+              <input type="password" class="password" id="pwd-confirm" placeholder="8 characters A-Z 1-9" required/>
+              <div></div>
+          </label>
+        </form>
       </div>
           <button class="button" type="submit">Create Account</button>
           <p class="text-bottom">Already have an account? <a href="">Log in</a></p>
-        </form>
     </div>
   </div>
 </body>
